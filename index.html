@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8" />
 	<title>About Me</title>
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
 	<link rel="title icon" href="gh.png" type="image/png">
 	<style type="text/css">
-		.img-circle {
+		body {
+			box-sizing: border-box;
+		}
+		.section-container {
+			margin-left: 20%;
+			margin-right: 20%;
+			/* display: flex; */
+			/* flex-direction: column; */
+			/* height: 100%; */
+			/* height: 768px; */
+		}
+		.section-top {
+			height: 50%;
+			max-height: 50%;
+		}
+		.top-bg-img {
+			/* height: 295px; */
+			height: 100%;
+			width: 100%;
+			vertical-align: middle;
+		}
+		.section-bottom {
+    		/* position: relative; */
+    		/* border-radius: 50%; */
+    		background-color: #bdc3c7;
+			/* height: 40%; */
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
+		.profile {
+			text-align: center;
+		}
+		.profile-img-circle {
     		background-repeat: no-repeat;
     		background-position: 50%;
     		border-radius: 50%;
@@ -12,35 +48,36 @@
     		height: 150px;
     		margin-top:-10%;
 		}
-		.main-div {
-			margin-left: 20%;
-			margin-right: 20%;
+		.contact {
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			padding: 5px 0;
 		}
-		.pic{
-    		position: relative;
-    		/*border-radius: 50%;*/
-    		background-color: #bdc3c7;
-		}
-		img {
-			vertical-align: middle;
+		.contact-icon {
+			width: 50px;
+			height: 50px;
 		}
 	</style>
 </head>
 <body>
-	<div class="main-div">
-		<img src="papers.co-mg57-beautiful-road-in-world-great-fall-mountain-lake-nature-29-wallpaper.jpg" height="380" width="100%">
-		<div class="pic">
-			<center>
-				<img class="img-circle" src="New.jpg">
-				<b><br>Santhosh Kumar G<br>Developer<br><br>Start where you are. Use what you have. Do what you can.<br><br></b>
-			</center>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/santhosh.love.98"><img src="fb.svg" style="width: 70px; height: 70px"></a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/Santhosh_cse3"><img src="tw.svg" style="width: 70px; height: 70px"></a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/gsaku0091/"><img src="in.svg" style="width: 70px; height: 70px"></a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/santhosh-kumar-g-b6543270/"><img src="lin.svg" style="width: 70px; height: 70px"></a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/santhoshcse"><img src="gh.png" style="width: 70px; height: 70px"></a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.hackerrank.com/SANTHOSH_14P238"><img src="hrank.svg" style="width: 70px; height: 70px"></a>
-			<br><br>
+	<div class="section-container">
+		<div class="section-top">
+			<img class="top-bg-img" src="papers.co-mg57-beautiful-road-in-world-great-fall-mountain-lake-nature-29-wallpaper.jpg" alt="nature background image">
+		</div>
+		<div class="section-bottom">
+			<div class="profile">
+				<img class="profile-img-circle" src="New.jpg" alt="profile photo">
+				<strong><br>Santhosh Kumar G<br><br>Software Developer<br><br>Start where you are. Use what you have. Do what you can.<br><br></strong>
+			</div>
+			<div class="contact">
+				<a href="https://www.facebook.com/santhosh.love.98"><img class="contact-icon" src="fb.svg" alt="facebook icon"></a>
+				<a href="https://twitter.com/Santhosh_cse3"><img class="contact-icon" src="tw.svg" alt="twitter icon"></a>
+				<a href="https://www.instagram.com/gsaku0091/"><img class="contact-icon" src="in.svg" alt="instagram icon"></a>
+				<a href="https://www.linkedin.com/in/santhosh-kumar-g-b6543270/"><img class="contact-icon" src="lin.svg" alt="linkedin icon"></a>
+				<a href="https://github.com/santhoshcse"><img class="contact-icon" src="gh.png" alt="github icon"></a>
+				<a href="https://www.hackerrank.com/SANTHOSH_14P238"><img class="contact-icon" src="hrank.svg" alt="hackerrank icon"></a>
+			</div>
 		</div>
 	</div>
 </body>
